@@ -62,8 +62,6 @@ fn get_guess() -> u32 {
                 continue;
             }
         };
-        break;
+        break number;
     }
-
-    number
 }
