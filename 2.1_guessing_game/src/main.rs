@@ -6,7 +6,6 @@
 
 use std::io;
 use std::cmp::Ordering;
-
 use rand::Rng;
 
 /// Main function of the game
@@ -17,7 +16,7 @@ use rand::Rng;
 pub fn main() {
     println!("Guess the secret number!");
     let secret_number = rand::thread_rng().gen_range(1, 101);
-    let mut guess:u32;
+    let mut guess: u32;
     
     loop {
         guess = get_guess();
@@ -28,11 +27,10 @@ pub fn main() {
             Ordering::Equal     => {
                 println!("You win, well played!");
                 break;
-            }
-        }
-    }
-   
-}
+            } //Equal
+        } //match
+    } //loop
+} //main
 
 /// User input function
 /// 
@@ -46,7 +44,7 @@ pub fn main() {
 fn get_guess() -> u32 {
     println!("\nPlease input your guess:");
     let mut guess = String::new();
-    let number:u32;
+    let number: u32;
     let range = 1..101;
 
     loop {
@@ -60,8 +58,8 @@ fn get_guess() -> u32 {
             _  => {
                 println!("Invalid input!\nPlease input number between 1 and 100:");
                 continue;
-            }
+            } //Ok
         };
         break number;
-    }
-}
+    } //loop
+} //get_guess
