@@ -4,6 +4,7 @@
 
 This repository is a training ground for the language Rust. 
 It mostly follows the lead of the [Rust Programming Language Book](https://doc.rust-lang.org/stable/book/title-page.html).
+A more detailed but less beginner friendly exists in the form of the [Rust Reference](https://doc.rust-lang.org/reference/introduction.html).
 
 ## Organization
 
